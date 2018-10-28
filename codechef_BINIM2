@@ -22,3 +22,5 @@ for i in range(t):
             print("Dum")
         else:
             print("Dee")
+            
+# Contributed by Saanika Gupta
