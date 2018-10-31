@@ -1,0 +1,28 @@
+t = int(input())
+while t>0:
+    n, m = list(map(int, input().split()))
+    isInvalid = False
+    isWeak = False
+    while n>0:
+        
+        count1 = 0
+        sol, test = list(input().split())
+        if sol == 'correct':
+            for i in range(m):
+                if test[i] == '0':
+                    isInvalid = True
+        else:
+            for i in range(m):
+                if test[i] == '1':
+                    count1 += 1
+            if count1 == m:
+                isWeak = True                
+        n-=1
+    if isInvalid == True:
+        print('INVALID')
+    elif isWeak == True:
+        print('WEAK')
+    else:
+        print('FINE')
+    t-=1
+#Contributed by Aditi Agrahari
